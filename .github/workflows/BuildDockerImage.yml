@@ -26,8 +26,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: false
-          tags: skyraptor/simple-sound-bot:latest
-          file: docker/Dockerfile
+          tags: skyraptor/davinci-render-server:latest
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
