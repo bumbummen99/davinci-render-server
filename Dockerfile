@@ -9,3 +9,8 @@ RUN apt update && apt install \
     postgresql \
     nvidia-cuda-toolkit
     
+# Download Resolve (If that would be possible :/)
+
+# Download & prepare MakeResolveDeb
+RUN wget https://www.danieltufvesson.com/download/?file=makeresolvedeb/makeresolvedeb_1.5.1_multi.sh.tar.gz
+    tar zxvf makeresolvedeb_1.5.1_multi.sh.tar.gz
